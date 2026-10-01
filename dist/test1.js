@@ -19,5 +19,12 @@ const unit_test = () => __awaiter(void 0, void 0, void 0, function* () {
         console.error("Test 1 failed: if((Utils.add(2,3) + Utils.subtract(5,2)) === 8)");
         process.exit(1);
     }
+    if ((Utils_1.Utils.multiply(2, 3) + Utils_1.Utils.subtract(5, 2)) === 9) {
+        console.log("Test 2 passed");
+    }
+    else {
+        console.error("Test 2 failed: if((Utils.multiply(2,3) + Utils.subtract(5,2)) === 9)");
+        process.exit(1);
+    }
 });
 unit_test();
