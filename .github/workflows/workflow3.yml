@@ -1,0 +1,16 @@
+name: Workflow 3
+
+on:
+  workflow_run:
+    workflows: ["Workflow 1"]
+    types:
+      - completed
+
+jobs:
+  job3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Cat index.js file
+        run: cat dist/index.js
