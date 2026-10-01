@@ -13,9 +13,13 @@ function subtract(a, b) {
 function multiply(a, b) {
     return a * b;
 }
+function IntegrationTest(a, b) {
+    return add(a, b) + subtract(a, b) + multiply(a, b);
+}
 exports.Utils = {
     hello,
     add,
     subtract,
-    multiply
+    multiply,
+    IntegrationTest
 };
