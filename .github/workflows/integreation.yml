@@ -1,16 +1,14 @@
-name: Workflow 3
-
-on:
+name: integration
+on: 
   workflow_run:
-    workflows: ["Workflow 1"]
+    workflows: ["main"]
     types:
       - completed
-
 jobs:
-  job3:
+  integration:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      - name: Cat index.js file
-        run: cat dist/index.js
+      - name: run integration tests
+        run: node dist/integrationTest.js
