@@ -12,11 +12,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const Utils_1 = require("./Utils");
 const unit_test = () => __awaiter(void 0, void 0, void 0, function* () {
     //test 1
-    if ((Utils_1.Utils.add(2, 3) + Utils_1.Utils.subtract(5, 2)) === 8) {
+    if ((Utils_1.Utils.add(2, 3)) === 8) {
         console.log("Test 1 passed");
     }
     else {
-        console.error("Test 1 failed: if((Utils.add(2,3) + Utils.subtract(5,2)) === 8)");
+        console.error("Test 1 failed: if((Utils.add(2,3)) === 8)");
         process.exit(1);
     }
     //test 2
