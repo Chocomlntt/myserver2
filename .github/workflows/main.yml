@@ -11,4 +11,4 @@ jobs:
         with:
           node-version: '24'
       - name: run tests
-        run: node dist/test1.js
+        run: node dist/userValidationTest.js
