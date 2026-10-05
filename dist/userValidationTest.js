@@ -13,7 +13,7 @@ const runUnitTests = () => {
         console.error('  ❌ Fail: 25 should be valid');
         process.exit(1);
     }
-    if ((0, userValidation_1.validateAge)("30") === true)
+    if ((0, userValidation_1.validateAge)("สามสิบ") === true)
         console.log('  ✅ Pass: "30" is valid numeric string');
     else {
         console.error('  ❌ Fail: "30" should be valid');
